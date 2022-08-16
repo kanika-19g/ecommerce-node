@@ -15,7 +15,7 @@ dotenv.config({
     path: './.env'
 });
 const hostName: string | undefined = process.env.HOST_NAME;
-const port: number | undefined = Number(process.env.PORT);
+const port: number | undefined = Number(process.env.PORT) || 9999;
 
 // connect to local mongodb
 const dbUrl: string | undefined = process.env.MONGO_DB_LOCAL_URL;
